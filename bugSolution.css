@@ -1,0 +1,22 @@
+To fix the issues, ensure that:
+
+1. **Parent element has a defined width:** If you're subtracting a pixel value from a percentage, the parent container must have its width explicitly set or inherit a width from its parent. 
+2. **Consistent units:** Use consistent units throughout the `calc()` expression. If mixing units, ensure proper conversion. 
+3. **Operator precedence:** Use parentheses `()` to control the order of operations if needed for complex calculations.  
+
+Here's corrected code:
+
+```css
+/* bugSolution.css */
+.container {
+  width: 500px; /* Explicit width for the parent */
+}
+
+.element {
+  width: calc(100% - 20px); /* Consistent units */
+}
+
+.element2 {
+  width: calc((100% - 20px) / 2); /* Example with parentheses */
+}
+```
