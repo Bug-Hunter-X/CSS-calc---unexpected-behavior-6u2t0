@@ -1,0 +1,1 @@
+This repository demonstrates a common issue with the CSS `calc()` function: unexpected results due to operator precedence, unit mismatches, or missing parent element dimensions.  The `bug.css` file shows the problematic code, while `bugSolution.css` provides a corrected version.
